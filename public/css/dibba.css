@@ -1,0 +1,34 @@
+.maindib{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+.dibcont{
+    border: 2px solid pink;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    color: rgb(4, 32, 78);
+}
+button{
+    width: 30%;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 10px;
+}
+button:hover{
+    font-size: 19px;
+    background-color: #7e8b94;
+}
+span{
+    font-size: 20px;
+}
+button a{
+    text-decoration: none;
+}
+span{
+    display: block;
+}

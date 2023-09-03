@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="./css/sty.css">
+<div class="maindiv">
+    <div class="container1">
+        <div class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="./img/pngg.png" alt="" loading="lazy">
+                </a>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/article">Articls</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/about">About</a></li>
+                    {{!-- <li><a href="/login">Sign in</a></li> --}}
+                    {{!-- <li><a href="/register">Sign Up</a></li> --}}
+                    {{!-- <li><a href="#">{{Name}}</a></li> --}}
+
+
+
+                    {{#if Name}}
+                    {{!-- <li><a href="/logout">Logout</a></li> --}}
+                    {{else}}
+                    <li id="sign"><a href="/login">Sign in</a></li>
+                    <li id="signup"><a href="/register">Sign Up</a></li>
+                    {{/if}}
+                    <li><a href="#" id="user_name">{{Name}}</a></li>
+
+
+
+                </ul>
+            </div>
+            {{!-- <div class="profileimg">
+                <img src="https://scontent.fccu31-1.fna.fbcdn.net/v/t39.30808-6/274171064_128851556319201_349070966229204610_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ywvcd2x86xwAX__eDDE&_nc_ht=scontent.fccu31-1.fna&oh=00_AfDwX2elgs4OZY_Z8fkNVX_PR6HvGUjOBlBZeO1NnLCFyA&oe=64E48EB1"
+                    alt="">
+            </div> --}}
+        </div>
+    </div>
+
+</div>

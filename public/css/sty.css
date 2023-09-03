@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+
+.maindiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.maindiv .container1{
+    width: 100%;
+    background-color: rgb(40 59 73);
+    position: relative;
+}
+.maindiv .container1 .navbar{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    padding: 10px 0px;
+}
+.maindiv .container1 .navbar .logo{  
+    width: 30px;
+    margin-left: 50px;
+}
+.maindiv .container1 .navbar .logo img{
+    width: 60%;
+    object-fit: fill;
+    width: 40px;
+    /* line-height: 40px; */
+}
+
+.maindiv .container1 .navbar .profileimg img{
+    object-fit: fill;
+    width: 40px;
+    margin-right: 50px;
+    border-radius: 32%;
+    cursor: pointer;
+}
+
+
+
+.maindiv .container1 .navbar .list{
+    margin-right: 50px;
+}
+.maindiv .container1 .navbar .list ul
+{
+    display: flex;
+    list-style: none;
+}
+.maindiv .container1 .navbar .list ul li{
+    margin-left: 20px;
+}
+.maindiv .container1 .navbar .list ul li a{
+    text-decoration: none;
+    color: #fff;
+    color: white;
+    font-size: 19px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    /* text-transform: uppercase; */
+    position: relative;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.maindiv .container1 .navbar .list ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    background: #fff;
+    left: 0;
+    bottom: -1px;
+    transition: all 0.3s linear;
+}
+.maindiv .container1 .navbar .list ul li a:hover{
+    color: #cbd4f3;
+}
+.maindiv .container1 .navbar .list ul li:hover > a::before{
+    width: 100%;
+    background : #cbd4f3;
+}
+.maindiv .container1 .heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.maindiv .container1 .heading h2,p{
+    text-align: center;
+}
+.maindiv .container1 .heading .mainheading{
+    width: 100%;
+}
+.maindiv .container1 .heading .mainheading h2
+{
+    font-size: 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-style: italic;
+}
+.maindiv .container1 .heading .subheading p{
+    color: white;
+    font-size: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+
+.maincontainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style9.css">
+    <title>Expert Opinion and Insights</title>
+</head>
+
+<body>
+    <div class="maincontainer">
+        {{>navbar}}
+
+
+        <header>
+            <h1><span id="element"></span></h1>
+        </header>
+        <section class="intro">
+            <p>At HealthCare, we are dedicated to providing you with the most accurate and up-to-date information about
+                healthcare, wellness, and medical advancements. Our "Expert Opinion and Insights" section is your go-to
+                resource for in-depth articles, analysis, and expert perspectives on a wide range of health-related
+                topics. We believe that informed decisions lead to better health outcomes, and that's why we've gathered
+                a team of respected healthcare professionals and thought leaders to share their knowledge and insights
+                with you.</p>
+        </section>
+        <section class="trust">
+            <h2>Why Trust Our Expert Opinion and Insights?</h2>
+            <ul>
+                <li>Diverse Expertise: Our team consists of medical doctors, specialists, researchers, and practitioners
+                    from various fields within the healthcare industry. This diversity ensures that you receive
+                    well-rounded and comprehensive viewpoints on different health matters.</li>
+                <li>Credible Sources: We prioritize accuracy and reliability in all the information we provide. Our
+                    experts base their opinions on peer-reviewed research, clinical experience, and established medical
+                    guidelines.</li>
+                <li>Trending Topics: Stay informed about the latest developments in healthcare. From emerging treatments
+                    and therapies to breakthrough research, our experts cover topics that are relevant and timely.</li>
+            </ul>
+        </section>
+        <section class="expect">
+            <h2>What You Can Expect:</h2>
+            <ul>
+                <li>In-Depth Analysis: Our experts delve deep into complex medical topics, breaking down intricate
+                    details into accessible explanations. Whether you're curious about the latest advancements in cancer
+                    treatments or want to understand the mechanics of a new medical technology, we've got you covered.
+                </li>
+                <li>Expert Interviews: We engage in interviews with leading experts in their respective fields. These
+                    conversations provide valuable insights into the forefront of medical research, patient care, and
+                    healthcare innovation.</li>
+                <li>Practical Advice: Our experts provide practical tips and guidance to help you make informed
+                    decisions about your health. From lifestyle changes to treatment options, you'll find actionable
+                    advice that can positively impact your well-being.</li>
+                <li>Tackling Misinformation: The internet is filled with health-related misinformation. Our "Expert
+                    Opinion and Insights" section serves as a reliable countermeasure, offering evidence-based
+                    information to dispel myths and misconceptions.</li>
+                <li>Interactive Community: Engage with our experts through comments and discussions. We believe in
+                    fostering a supportive community where you can ask questions, share experiences, and learn from
+                    others.</li>
+            </ul>
+        </section>
+        <section class="connected">
+            <h2>Stay Connected:</h2>
+            <p>To make the most of our expert insights, be sure to subscribe to our newsletter. You'll receive regular
+                updates on new articles, interviews, and research findings, ensuring that you remain at the forefront of
+                healthcare knowledge.
+
+                At HealthCare, we're committed to empowering you with the information you need to make confident
+                decisions about your health and well-being. Explore our "Expert Opinion and Insights" section today and
+                embark on a journey toward better health through knowledge.
+
+            </p>
+        </section>
+        <footer>
+            <p>Please note that the information provided on our website is for informational purposes only and should
+                not be considered a substitute for professional medical advice. Always consult with a qualified
+                healthcare provider for personalized guidance and treatment.</p>
+        </footer>
+
+        {{>footer}}
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Welcome to Our Expert Opinion and Insights Section'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

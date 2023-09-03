@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.section{
+    width: 100%;
+    min-height: 100vh ;
+   
+}
+
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section{
+    float: left;
+    width: 55%;
+}
+
+.image-section{
+    float: right;
+    width: 40%;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 125px;
+}
+
+.content-section .title{
+    color: #3d3d3d;
+    font-size: 28px;
+}
+
+.content-section .content h3{
+    font-size: 21px;
+    margin-top: 20px;
+    color: #5d5d5d;
+}
+
+.content-section .content p{
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.content-section .content .button{
+    margin-top: 30px;
+}
+.content-section .content .button a{
+     
+     background-color: #3d3d3d;
+     padding: 12px 40px;
+     text-decoration: none;
+     color: #fff;
+     font-size: 25px;
+     letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+    background-color: #a52a2a;
+}
+
+.content ul li div span{
+    font-size: 35px;
+    color: #5d5d5d;
+    font-weight: bold;
+}
+.content ul li div{
+    font-size: 20px;
+    color: #3d3c6c;
+    font-weight: bold;
+}
+.content ul li{
+    list-style: none;
+}
+.Ab2{
+    display: none;
+}
+
+#abtbtn{
+    margin: 10px;
+    padding: 4px 5px;
+    font-size: 20px;
+    background-color: #3d3c6c;
+    color: white;
+    border-radius: 10px;
+}
+#abtbtn:hover{
+    margin: 10px;
+    padding: 4px 5px;
+    font-size: 21px;
+    background-color: #3d3c6c;
+    color: rgb(163, 172, 185);
+    border-radius: 10px;
+}

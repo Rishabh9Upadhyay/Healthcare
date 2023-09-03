@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Products and Supplements</title>
+    <link rel="stylesheet" href="./css/PandS.css">
+</head>
+
+<body>
+    <div class="maincontainer">
+        {{>navbar}}
+        <header>
+            <h1><span id="element"></span></h1>
+        </header>
+        <div class="container">
+            <div class="product" onclick="showProductDetails(1)">
+                <h2>Multivitamins and Minerals</h2>
+                <p>
+                <ul>
+                    <li>These are designed to provide a variety of essential vitamins and minerals that may be lacking
+                        in
+                        your diet.</li>
+                    <li>
+                        They can be beneficial if you have specific deficiencies or dietary restrictions.
+                    </li>
+                    <li>Consult a healthcare professional before taking multivitamins to ensure they're appropriate for
+                        you.
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div class="product" onclick="showProductDetails(2)">
+                <h2>Omega-3 Fatty Acids</h2>
+                <p>
+                <ul>
+                    <li>Found in fish oil supplements, omega-3s are known for their potential cardiovascular and brain
+                        health benefits.</li>
+                    <li>They may help reduce inflammation and support heart health.</li>
+                    <li>Consider consulting your doctor if you're interested in taking fish oil supplements.
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div class="product" onclick="showProductDetails(3)">
+                <h2>Vitamin D</h2>
+                <p>
+                <ul>
+                    <li>Vitamin D is essential for bone health, immune function, and overall well-being.</li>
+                    <li>Some people, especially those with limited sun exposure, may require supplementation.</li>
+                    <li>Your doctor can determine if you have a deficiency and recommend the appropriate dosage.</li>
+                </ul>
+                </p>
+            </div>
+            <div class="product" onclick="showProductDetails(4)">
+                <h2>Probiotics</h2>
+                <p>
+                <ul>
+                    <li>Probiotics contain beneficial bacteria that can support gut health and digestion.
+                    </li>
+                    <li>They may be helpful after taking antibiotics or for managing certain gastrointestinal issues.
+                    </li>
+                    <li>Consult a healthcare provider before using probiotics, especially if you have underlying health
+                        conditions.</li>
+                </ul>
+                </p>
+            </div>
+            <div class="product" onclick="showProductDetails(5)">
+                <h2>Protein Supplements</h2>
+                <p>
+                <ul>
+                    <li>Protein supplements like whey, casein, and plant-based options are often used by athletes and
+                        individuals looking to meet their protein needs.</li>
+                    <li>They can be useful when it's challenging to consume enough protein through whole foods.</li>
+                    <li>Consider your dietary goals and consult a dietitian if you're considering protein supplements.
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div class="product" onclick="showProductDetails(6)">
+                <h2>Creatine</h2>
+                <p>
+                <ul>
+                    <li>Creatine is popular among athletes and bodybuilders to support muscle performance and growth.
+                    </li>
+                    <li>It may enhance short-term high-intensity activities like weightlifting.</li>
+                    <li>Consult your healthcare professional before using creatine, especially if you have kidney
+                        issues.
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div class="product" onclick="showProductDetails(7)">
+                <h2>Green Tea Extract</h2>
+                <p>
+                <ul>
+                    <li>Green tea extract contains antioxidants called catechins that may offer potential health
+                        benefits.
+                    </li>
+                    <li>Some studies suggest it could aid in weight management and provide cardiovascular support.</li>
+                    <li>Be cautious about dosage, and consult your doctor before using green tea extract supplements.
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div class="product" onclick="showProductDetails(8)">
+                <h2>Melatonin</h2>
+                <p>
+                <ul>
+                    <li>Melatonin is a hormone that regulates sleep-wake cycles.</li>
+                    <li>It's commonly used as a supplement to address sleep disturbances and jet lag.</li>
+                    <li>Consult a healthcare provider before using melatonin, especially if you have underlying health
+                        conditions.</li>
+                </ul>
+                </p>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+        {{>footer}}
+    </div>
+
+    <script src="./jsfile/PandS.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Health Products and Supplements'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

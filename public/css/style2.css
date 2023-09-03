@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,900;1,200;1,400;1,600;1,700&family=Roboto+Condensed:ital,wght@1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    /* width: 100vw; */
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --bg-c : #605a5a;
+}
+
+.footerdata{
+    display: flex;
+    width: 60%;
+    height: 220px;
+    margin: auto;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    padding: 10px;
+    background-color: #0c0835;;
+    font-size: 20px;
+    color: white;
+}
+.footerdata .boxf{
+    width: 25%;
+    text-align: center;
+}
+.footerdata .boxf img{
+    width: 45%;
+}
+
+.footcontainer{
+    background: #090909;
+    color: #8e8cd3;
+    margin-top: auto;
+}
+#f5{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.container2{
+    display: flex;
+    flex-direction: column;
+}
+
+.container2{
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+
+
+.sm{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.boxf button{
+    margin: 3px;
+    padding: 3px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    background: rgb(8 3 24 / 96%);
+    color: whitesmoke;
+    border: 2px solid rgb(122, 140, 162);
+}
+
+.boxf button:hover{
+    font-size: 18px;
+    background-color: rgb(47, 116, 125);
+    color: rgb(181, 177, 226);
+}
+
+#f5 button{
+    margin: 3px;
+    padding: 3px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    background: rgb(8 3 24 / 96%);
+    color: whitesmoke;
+    border: 2px solid rgb(122, 140, 162);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#f5 button:hover{
+    font-size: 18px;
+    background-color: rgb(47, 116, 125);
+    color: rgb(181, 177, 226);
+}
+
+.bff{
+    font-size: 20px;
+    color: #8e8cd3;
+}
+.bff:hover{
+    font-size: 21px;
+    color: #f4f4f8;
+}
+.BBBB{
+    display: flex;
+    font-size: 18px;
+    color: #8e8cd3;
+    justify-content: space-between;
+}
+.BBBB:hover{
+    font-size: 19px;
+    color: #f4f4f8;
+}
+#CCCC{
+    color: #8e8cd3;
+}
+.CCCC:hover{
+    color: #f4f4f8;
+}

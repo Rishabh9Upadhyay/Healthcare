@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style6.css">
+</head>
+
+<body>
+    <div class="maincontainer">
+        {{>navbar}}
+
+
+        <div class="maindiv1">
+            <div class="headserimg">
+                <span id="element"></span>
+            </div>
+            <div class="containerser">
+                <div class="boxser">
+                    <img src="https://news.harvard.edu/wp-content/uploads/2019/12/PrimaryCareDecline2500-1200x800.jpg"
+                        alt="">
+                    <h2>Health News and Updates</h2>
+                    <details>Regularly updated news articles, blog posts, and summaries of the latest developments in
+                        the healthcare industry.</details>
+                    <button><a href="/healthAndNewsUpdate">click here</a></button>
+                </div>
+                <div class="boxser">
+                    <img src="https://static.vecteezy.com/system/resources/previews/000/687/889/non_2x/women-practice-running-sport-in-the-landscape-vector.jpg"
+                        alt="">
+                    <h2>Exercises Tips</h2>
+                    <details>Many exercises that can be done at home at lead a healthy life.</details>
+                    <button><a href="/Exercise">click here</a></button>
+                </div>
+                <div class="boxser">
+                    <img src="https://wallpapers.com/images/featured/doctor-kwucobzhm0etbcwy.jpg" alt="">
+                    <h2>Expert Opinions and Insights</h2>
+                    <details>Section featuring articles written by guest healthcare experts.</details>
+                    <button><a href="/expert">click here</a></button>
+                </div>
+                <div class="boxser">
+                    <img src="https://www.sortra.com/wp-content/uploads/2021/07/health-review00.png?ezimgfmt=rs:372x255/rscb1/ngcb1/notWebP"
+                        alt="">
+                    <h2>Product and supliment</h2>
+                    <details>Reviews and ratings of health products, gadgets, and apps.</details>
+                    <button><a href="/PandS">click here</a></button>
+                </div>
+                <div class="boxser">
+                    <img src="https://images.ctfassets.net/17o2epk8ivh7/2ZQTdBKFxvkLYhrtyeWOdg/5906eef24264641dc0d61974adfd9bfb/3840X2160_Health_and_wellness.jpg"
+                        alt="">
+                    <h2>Life Style and</h2>
+                    <h2>Others</h2>
+                    <details>Weekly progress updates, tips, and encouragement for participants.</details>
+                    <button><a href="/lifestyle">click here</a></button>
+                </div>
+                <div class="boxser">
+                    <img src="https://us.123rf.com/450wm/loft39studio/loft39studio2307/loft39studio230715992/208120729-generative-ai-indonesian-traditional-local-food-meal-in-bali-indonesia-asian-healthy-food.jpg?ver=6"
+                        alt="">
+                    <h2>Nutrition and Fitness Plans</h2>
+                    <details>Collection of healthy and nutritious plan which you can access</details>
+                    <button><a href="/Nutrition">click here</a></button>
+                </div>
+                <div class="boxser">
+                    <img src="https://img.freepik.com/premium-vector/hospital-building-city-landscape-doctor-assists-patient-car_200075-1612.jpg"
+                        alt="">
+                    <h2>Health Chalenges</h2>
+                    <details>Directory of local healthcare providers, clinics, and hospitals.</details>
+                    <button><a href="/HelthCh">click here</a></button>
+                </div>
+                <div class="boxser">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgVFRYZGRgaGRgcGRoaHRgaGBkYGhkaGhgZGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHhISHjQrJCs/NjQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ2NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALcBEwMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xAA9EAABAwIDBQUHAwMEAQUAAAABAAIRAyEEEjEFQVFhcQYTIoGRFDJSobHR8EJiwXKS4RUjgvEzBxYkQ7L/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKhEAAgIBBQABAwIHAAAAAAAAAAECEQMEEiExQVEiYZFxoQUTFBUjMrH/2gAMAwEAAhEDEQA/ANa0NG+U81jRfN81XsYRvRhh46rro47LRsEWKW2OKrGsdxUpjbQTy8946qWhoscERJgzZIza+aRsse90CLNGbqVPpXhbbMPhVgqrZ1mBWgWcuzaPQYRoIKSgIFBE4oGGgkXRtcgQoIIgjQMCJGiQICCEoiY1TABVZt3/AMTuimVMWwavH1+iqds7QpupuaH3OkhwHqQhJgZnsB/56n9I/wD0V0AFYPsVQcys8vAAcIaZbczMCDqt0wKIKlyVLti0EEaskJEQlIkAEQkpZSSgBKIpSQTwQgAkOCVKBTExmEEuEE7JMc3elhykjZj+CV/pzxBhb2jnQywxre/4E49+6fznx6oPolouPw8OSbSCyx2abu8kgmx6n6pWyz73kkOvPUqfSvEWmA9wKypmyrsF7gU6iVlLs3j0PI0SCRQaRxSkk2QAZCS5CAloACNEEEgAggm6z8rS7gP+kwIO09olnhYJdvO5vXms7iaxN6lQ6WvA/wAJ7EVi4ug3m5F4+xKgvogZXmXH95AYOcx9FaVANPfefFEG4Ej+SVHFMvmHzppI6W4px785LGvaPFBDSbxMi4sLG/VNOe5hytYYBMCPWTwiboYCvcaYPnlgmd4IMgidfkrvYG2iDke7M3c79Q4ZuI5rKV8e5rnd4RG4jcOBty3FHjHtaGljyDE6DfoQeKllVZ1QFGqDsptI1aeVxlzYjm0gR6Sr5IkNBBBABFEjRIAQ5ANRuCSUAFG7VE1L5bvqkpgJhBKQQSJaEWRONalFiZCiUu02ECVUq+237g6qgJWseUZSVOiw2X+rySCdepStlaO8kALHjJS9Y/EWeBHgCmMN1DwHuBSgsn2bx6JaCQ0paRQEEEEAEAjQQQAEEEEABU/aDFFrC1usSrhUW2mmXEXIj6XQgM9stxFEEkDM52upvcnj9lX7SogvaC8DNLBBsJsb7rJVWjUdla3KRYg7veuI43Up+x5EE+9F/heBY+mpVOSLUWQcNhixr5NxabZpMkOB6b0xi8UWZTOs75tpcTorfE4PKPC7xFjRvMFvgv8AXyVHtHY7yAM4kmeYBiBpw+qTlQKNkR+LDmZjcT4rTF+O/wDym3U84ysN2kuaPibo5l+UEcwnTsmpSbpIdEAcLiT5lR8DScxwMi388Tv1UtjSNZ2KqRUYQZDg5s8bH7NW/WD2B4ajXNGrhI5nWOsz6reFCIl2BGiQTEBFCNBABJDmpaIoAJJKUiKEAlBBBMVBNfCU16Ya60pbHJtGSkyFtweEdQqV1XwxCudvnwDqFQErSHRE/wDYstl6OSWuiTwKVs0Wd5Jtx1R6w8Rb4F0tBUqFE2f7gUxZS7N49DjCnAVAqPISe+KVDuixlCVWOrniiZXdxRQtxaSizKt753FJFV3FFBuLXMhKqe/dxRGu7intDcW8qJjcPmuNVD753FD2hw3ooNxTYmq6lV7ssaA5heJ45oIAHqll5IuY6WTu2KbXwXAOkRed1xcGd5WO2riGUR4HvY+YLc7nNB/pcDbzXPlu+zvwNOKbRbVmS6CqXaDBmgI9n4qpVZJ1F827LxIF1QbWr53loc8gGCDaemUi3mVzqDb7OpzSXQzjMcaboFVwPAOdPSBqpmC2hiJJe3NTa0uJc2HHSAHdSJkHVVdOlD8tNgFrugDpJmSVoqIe5jaZ1ecoaLF02E+cei2jwc0lZquwNf2lpqFpYabgC3WT4oIPC3BbpZnsPsd+GoEVBD3uzZfhaAGtB52J81pZW8W65OTJW510GjCJBUQGiQlBAARFGiQASCOESEASJGiTAis90JykhSAyhOMaFTZgkyu297g6qgIkrQbbZLRCou5dwVx6Jn2WGytHdU3UfqE5s8EAghMupm9uKPQ8RcbOHgCmKHgDDBKmZllLs3j0RMSbpsv5J2ug1oQhMYL+SNrlILQmnJi6EByBcEE2EgsMosqcaEHckANEpt+ifZQLjwT/AHLWRvM6n+FQKLZVHDu11j0VbtCg1/vD5ArVd34481Q7VpZHOG7d0WGfqzu0jSe1kDBUGQWMHhAM8zG9c/xNYCpDxcEid5E2810CjimMaSL6yeHVc+2u8ueYZrfMeGtguZSO2UUT2VWMu1sni77BScDUcajXycwObzFxHoqqi8kQVa7KdDwdzQXH6NHmfoVULckZ5WlF0dM2RtllWm1xMO32MHn5qw9ob8bf7gsLhqQDBNw5oD+bgAZ62TVXTI0DxGPLVdu1HnUdDLknvAsLgdv0qZLDiGscwlrmvcGmRxa+FbDtNhol1RnVr2HXlmSolpmgqVuCOjVnVQaddj7A34Gx9Cn2iCgknoJpr5SatfKEqHY494CMKop1y58blcN0TaoE7EwglQggZCbhmjeltw44rLf6m/iVJZtRx0laOLOZSXwWG12ZQCCqc13JyvinP4mOX5CjEz+WTSpCbtlhgHOcHSYTZe7cUrZjLOnim3CJCPR+FphKUtBLlLbh/wBxUfAM8AUpjFnI1j0Ra9KD7yQAPiS8TTuoj2oEyRb4kh44OTDKaMs5pk2Lyn4koUzxSWU7qbQw4Bvf+OvmlZaVjdDCk3LrfNPGnlFv8p87+iZe6akcGpotJIFF0Wm5RY58OaBqhhm+JxOgUeti2NcHumDMO1A42TS5GWTNecKr2th85AGpBy8yL5fMZvRWTKgJtvE+XFRtqUi5hymHDxNP7hcKNqfDHCTi7RhMVgfC4Bt5NxYzzWUx+zyXF78x5Ekjzv8AJdROHbiWB7Dkfo60iRrmHHmud9qsScO8sgVXD4Jyh28OkajWI+i5ZYZp0uj0VqYuP1EHCUi5wY0XK0jcO1jQwaky48SB9FRdldsS5zK1NtNxNnAFodOjTOh5ixV7tOpkLXajM0DnJuOsLbFj28s55ZNz46LXAO8MHyUXF1mU2uqPMNYC4nl9+CnUaWWehWS7fvd7KI/VUYHdLm/mAtnwjFmN2pRa+uXuD/FmcQbkZnEhpdv3+Si1cABdgIkEayWzvGW5/wAq7ogVC0P3slh5aHz+yiuBYRBkbncfsVkDR1fY2Ic+hRe+Q51NjjxnICVdYTGl0Bxg8eKyXZrbntFLK8/7tNpDuL2mGtfzMmD5Her8sgtbyJP56rbtENWX7Wv4pNai871C2bjdGvMWtPDgVcFQ+CNpWUsM+Z0hSmuqck41u/8AOnJNvBSsKDzv5IJN0SYUY4PTralj1H8od27glsY74f8AK3OclYfEgNg2gJJb+o2kmBvQawgzEj59I/lG4OJkhIZM2fcO/Nya4+ad2e0+JNP3lT6PwtsCzwap9rOaYwDSWC6f7s8VDLXQxiKfNQHkzqrWrQneor8CTvSsdFe15TsFP/6c7ipmGwQbc+I/IeSGUkgsJhsozO1+g3fypL7OB3EQeuo/n5JbXqNUf+g2DvdPAi8fyE0hoeCaYPG53khRqTrroev5dRcXWiQOapIY1jcQSe7ZvN07i6QAYAASDYHjHC09JCZ2bQl+Yp3bWg5FNd0P7E7CsOp1/NE5XbIKYwNUuYJ1+vNSXaKH2I5xtbalTC1Hsp61CI/bfxEc9PWdyq8SadCie9dnfUeBTMHwkHxOJ5gwf6lbduaOWqx0fn4Fhdv4o16rGE5TTy62a64ME7nTAnfCrtlyf0l7samyuwsYA4se7M6LCYiPT5K5wOznVHBjjmDT73Ifzcj1WQ7N7X7tz6TIgskuGkh144+8updlcPFIPOr784/T9/NCoFJqIWJp5XRyCyvanCPqYSoxlPvHktgSARDgc4nWOHVa/aR8ar6ZIkAS4m3DqeSbVgujlww76cioMhkOEQQ0n9bI0Yd7SJET1ZxAyl2YeE3A3tfvA+vRaXtbTy4gCZJY0k8yXLJ7ZqkZABuf6DLCxkqKCwG1X0KjajIzNMwdHDe08iCR5rr2Ax4xFJlWmINVgABuWRPeTxg25lcIfiiNQNF37sps4UcNTkRFNpvq1pGY+ZcST15KoEtoV7Oc4YDfed4H3JklW+GrlwPFtj9+llFoshr6h94+6OW6+5R6eGczxue6bkwYHGI3hW1ZD5LkOckOLk1g8QXjnv8Aunn5uCgTGczkEMr+CJBJW+18oT1LEzbKq/fopOHYSbBaNGaZL7+NyQa87k/T2a93AKU3Y2/MlaQ6bImEeSTZPMwTjyCljDd3cCfRKD3u0bHVTY6+RdKllESkveBvS20H8kh2BedXBIfPiFNIKXHNJ9nLdXJRQUk/QikZgET3ph9RUkUKc+Dbqm8Y8OYZ5eXAhNPqDioWOxEiAqSBIkUMT42A6khp9YB+fzR4tviULCmXsO8OHorLEt8Sb4Y+iTgmwICjbWbMBS8Lok4xk5TwKldiF4ZmVoToeDI3hJJsoVB5zlFWBQ9vcKTQ71rc3dyXAfDv9Fx51TM3vCbmXR+4zr0lehX4YQ5puHag6QuA7a2Y6liqmDYJ8YFMcWvhzB5BwE/tQnQpW0kF2V2e6tiGU26vnMeDAQXE+nzXcMPi6dNoYZAAgHdZc67NYB2Bqkl7DUe0Mu05RecofNpMSY/SNFsMPWbiaecjK4SCNRI18uawWeMm1F3XZrGPHI5tGuJL5tu58AEzs6XS46u+Q3BVFe0RcTMX+Sv9mOYW52mwG/UHmFtGaYSjtRX9rtlUnUXVCw96GQxwJmb5Rl0NyuS9odjVaFT/AHy4DwuAkS5pIByuEht8w0tGi3faHta8vLKYAZTc0uc/VxBDsoaPdEiJ110WW7dbb9shwblawgNuDqd0aDxEDopk14JJ0XHZ3GbOeaDHUQ0lzm/7zWVHPyj9Tw2LuMXiYhdaqU/Dl3GB5b1wrspgBiMVQpPflhwqiBcljcxHK4Pou8jcnF2iWM12TZM1qeaG8deilEJqpNgNT8hvKsRBe9zXgssG/NT6OKziW+fJQqtLO4n9LbNnSd7imKdZzHgtEMHvE6unW24JNAXfeckEw14NwgoJM7TJJsJPISpuGY8a+HqL+ihbPw72lxdYFsc5TzMYKYLnmXEeK9p5SvN12v8A5cdmNq378GuHEm7l1/0nv2m5n6vkpWH2jUqCWFp+vosjtDaAcJGh+SPYVd4fnHu7+fRedpf4hnjL/O7R6EtFGcN2M1zq1d36Pz1QpVa40b6x91UYrazh+kR1KiN7SZXeJnob+hXqr+I4G6v9jD+25tu5L9zSe2YiSMmnp6ypGGfVJBc5uXkDPK5Vdg9osqgFjuMjeLbwpINo6fVdkZRkrXRyOEoupdk97/yVHLnXOo+YTIF/X+fsnQyQRyP1KtMVEZ1WJaTJG/j/AJUeriIVrVwjXXi/EaqvxWynH3SPO3zCtNAiuxFdQXVSSnMfh3su4W4gghR2NJsBJ5X+ido04Ssn7PcTUZwBv6FXdRwcA5pkclSbOoVA9pLSBN5BA05q4rUblzLO3/C7+oceeqmU+SF9RJwxTlRyjYd8e9bpdOVKgKVpsVCiorBlenw/mkuMqkAqvVdIhc27f4R9LF4bFUmZnve2lG8uJOQA6AnM9s9F0dtcBN4qswNzOAcQQWggGHfpPKNfJJq1QLsx1bs+8VQKr2BodMzLiJmw5qdiMPkblY6WgzE3nieKfotGfPUMyZM3UzGsa9hDWSD+0aclxx00MV7bs3i/kzD9pPnxME6TF01h8W5hzssJuNxG8FP18OY8LcrdJiD0ANys7taiSWgPcwgz4Tr1jVNNpltJmor4BmJLg+mzu8oOeB3jnuJzZXC7QAGyT7xPAXy2O7CsZSxNdr3RSpFzWOgy4UzUMkAWEt85R0nYpgllZrjHhDwWg8M2XUKr2vtDH02VA/J3dUOY5zMxBL2hpbd0gwIkiLLa4sxcWiJ2bxGXH4V44/ItqA/IrvTXggEb1wHs7m9qoeJrSwiXOnKG6OmP2kgcCQu3MrBgABsrh1RMkWOtkziamS8S4+Fo5czuCY9rH/SiVMcOKskU+gXmXvPSSG+TWx8yeii4mi0XAHq4HrM3RVMWoFfFFDkUkx3viNM3qfugoGcoKbHRptq1QwWWF2jj8ziNy0+1yXA3WMxlPKV8bGUcmRyN0hTcTIIOi0OxMexwytsBosdiXw0nkVI7NVSIW84fRu+D0NLJ1t8Ntj4OioX+8Sd2inuryoNd0TxK44NuTbPRUtsdo/szHd1UDhvs7hC1r8cZMNN/6fvzXPgbrW4PFAU6eYibT0C9jR5pKLjdJcnFmwxlJOrY+zbxz5Mm83m8wd2iXiO02UeFknQ5tPKD1VGyqBXzSMuY35GUxim2DszYOkEEjqBoLqXq8yi2n6/wbrRYHJJrxfk6BsfHmrSFR7Q0eLpYx13KLt7ajqQYxjQatUnIHe6xrQC97hviWiN5cBxKg9mq+akxk2a50jj4ibqs7QYg+3uB0bh2ZeWZ7y4jrDfRerHI1gUm+Wjx5YY/1DjXCb4+w93bnnxEvd8Trkk/ToLcFoMFhWsYAAOZ4niqDZuKBe1ptOnWPD84Wjp1BAg7h9FOn5tvsrU8VFdFTiajmk348YHKw5Kir7Zq0j75cJPhN5g3BV/jtXO1AuRx4LG7bd4t8nNygRay4MkpRlw/TphGLStGrp415YH6ZmgxffBgeoUCtto0nWl0mN5DSbwT0hOYZhyCCbCBppAsqbGMtuzaunrr/C1eSalVsz2QrouWdpnF7GBkl5AnqYH8+i0rzBXOMA//AOTT35YPpmctdW2ywGHOg8CvR0spSTcmc2ox9KK8LFzwo2LaHtg8fp/2oTdpsdZplSGvlovGsrpOfa49jDaeZwaPNWdWqQA0EaQogrtbZmp1dvKcokC51SaTHyZ3auzqokzIM6X+W5ZnEUyD4h0/yulB03N+Szu28Lh2uBfVZTzCQHb+iwnjrlGkZ32YbaNV7YdfI0EnKTOaIvBFrz5KiZXrvp5qjqjqLXH3hLSQIsdTF5g2tvWzx2KwzGnI8VTpkYHSepIgBZh5e+YYGtAdlYDYW0a0b+ZuT1UxsUq+Q+zeGfXqOFJjnPcPCP2k3JOgAgCSup4XC1qdJja7DIbEhwcLWGYjfABVZ/6PYVgpV3hoDzUDDya1jTHKS4+i6DixZaRW138kylaSM1gsDVeMzYybi469I+qh49rmO8Q19CtfgCbttla1sDrNvkmscwEiQDcG4kSNFW4n0y52dVLM+QgcCQDHQ3VfTove/I1pc7hF/PhC6E0ywE6lVHeCm97w0SQJMXgHihyGmUH+iVvgH9zfugtt3Y3i+9BAtzMzXFNwnLPms9tKjT+H5qyq7MLZio8f8So7abWAg+M8XNf9rLxlp5N8xS/RHU4xT4fBlMR3ZsWgj+pWGzMMy5aI8/yBzR4nYrar8wcGTuDH+sWtxT7dm5bB7uQyuIFhYCILI3LaWC40kvwawyRjwmST5eqaexu/L6lNN2Y7c9/9jkY2a+f/ALHf8I+q5lpZJ9L8HS88H6x/DUmFwGVp6Spe08cyj7zJgDRvyG8peDpvZDWUyBvcRJU5+yWvcXOpkk6nM77rpeGShSSv9DPHlhvtt0vuZhuKBcKgaAD4g07p3EKRisdna1oDQGlxkWJzRY+i0dDY7Wm1KPM/dSa2ymvADmNMTqsY6PJTV1f2OqWuxbk66+5zbG9oMVhng0Q404GgZGYl0iSxx0AULE9rcTUcXmn4yAMxaS6Bp7rBI6jeuwYPY9NrY7tg8gnn7PYNGN9AvSxYmsajJ3R5ObOpZXKPFnPeybK+Ih1bNTaHQYaQ82BBANhrv9Foa+1PZjlrl7rHK5jC4PvY5bZTGo48ZWjZg8u4J/u+SpY1Hoj+db+rlGfp4nvaXetDgHNOWQQ79Qggab1ldqGXzJAF4AteCZXRX0eQVc/ZrJ9xn9oXJLSuUrs6Y6mKVUUfZ6uyoypkBAD7yC0mW6jTgoG1Hw6NRa587HgtrSwjRMNA6CPooGI2NScZLBPn905adt2Qs8aMFR2k2hXNV7c4Z4coEky0N0F98qy/954dxvgydZilJNt0t4wtbhdk02vkMarEYFg0Y30XTixuKqzPJljJp0YXEdsMO9gYcJiABplYWlvQtTmzdrUazsgp4pgAsX5mg30krbnDN+EeiZq4Zh1a09QFrz8kPJGqSKyns5hEgvH/ADcpFPDMadXepUxmHYBZrfIAeRHBEcIz4R6BOzOyNDG/EY5rD9vMJVq1WGnTcWBgAIINySTaZ4ei35wrB+hvoFHxVIWtoiXKBM42zZ1YG9Kp/Y/7La9hOz1OsKrq9N8tczKDnZYhxNrToFpXU1P2VUyh3OP5SSoG+CTsbYtDCh4oMyB5BfcmSJvffdWFRubVNU6uZKcUyAqNMMJIm4AM8pj6lJq0wTJJRzKIMJRwFsFPwtDJJA3nVRq2Da6buE8I+yklhTcHj9EUgtj/AH5QTGQ8foiRwBXMrFLzoILNGgox+cP4QnkggmAqeSA6BGggA8yW2sRwQQQAffnkjOIdyQQQAYxbuSJ2Jdy/PwIIJipCm4l7rW5lE/EndH3QQSAQcS7kkmqeSJBAw/aHIjUPJEggAhXIS/anckSCVhSEuxTkkVz9/wCPJBBFsQXflF7Q5Ggi2OhJrO5JoVCReEEEWx0hLnJIfGiCCLHSFNxb26FE7aD/AIvkEEEWFIJu0anxfIJLdqVBvn0CNBTbK2oVV2i9ou6Sd0CAoTtq1fi+QQQTbYKKGv8AWq3x/IfZBBBZ7mPaj//Z" alt="">
+                    <h2>Some more tips for better helth</h2>
+                    <details> fun and informative quizzes to test users medical knowledge or engage them in
+                        health-related polls to gather insights.</details>
+                    <button><a href="/lifestyle">click here</a></button>
+                </div>
+                <div class="boxser">
+                    <img src="https://etimg.etb2bimg.com/thumb/msid-102884998,imgsize-609480,width-1200,height=765,overlay-etbrandequity/marketing/rise-of-esols-the-game-changers-in-the-third-evolution-of-influencer-marketing.jpg"
+                        alt="">
+                    <h2>Social Media Integration</h2>
+                    <details>Links to social media profiles for users to follow your updates.</details>
+                    <button><a href="/healthAndNewsUpdate">click here</a></button>
+                </div>
+                <div class="boxser">
+                    <img src="https://img.freepik.com/free-photo/doctors-talking-each-other_23-2147822852.jpg" alt="">
+                    <h2>Secret of health</h2>
+                    <details>User-submission form for health-related questions and display of answered questions from
+                        healthcare professionals.</details>
+                    <button><a href="/Exercise">click here</a></button>
+                </div>
+                <div class="boxser">
+                    <img src="https://thumbs.dreamstime.com/b/print-235182677.jpg" alt="">
+                    <h2>Health Myth Debunking:</h2>
+                    <details>Debunking articles explaining common health myths and misconceptions and supporting
+                        evidence and explanations from medical professionals.</details>
+                    <button><a href="/NewsAndUpdate">click here</a></button>
+                </div>
+                <div class="boxser">
+                    <img src="https://thumbs.dreamstime.com/b/contact-us-treatment-prevention-disease-syringe-vaccine-medical-concept-selective-focus-89250989.jpg"
+                        alt="">
+                    <h2>Need Help?</h2>
+                    <h2>Contact us</h2>
+                    <details>Contact us for any information you need. We'll be happy to help.</details>
+                    <button><a href="/contact">click here</a></button>
+                </div>
+            </div>
+        </div>
+
+
+        {{>footer}}
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Our Services'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

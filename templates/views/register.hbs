@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .formContainer {
+            border: 2px dashed blue;
+            padding: 2px;
+            text-align: center;
+            background-color: cadetblue;
+            width: 650px;
+            margin-left: 250px;
+            border-radius: 10px;
+            margin: 5px auto 0;
+        }
+        input{
+            width: 300px;
+            background-color: black;
+            color: yellowgreen;
+            padding: 5px;
+            font-size: 20px;
+            margin: 1px 0px;
+            border-radius: 10px;
+        }
+        .AA{
+            width: 112px;
+        }
+        ::placeholder{
+            color: yellowgreen;
+            text-align: center;
+        }
+        button{
+            color: rgb(145, 135, 212);
+            border: 2px dashed red;
+            padding-bottom: 4px;
+            line-height: 25px;
+            padding: 2px 3px;
+            margin: 2px 0;
+        }
+        button:hover{
+            background-color: rgb(5, 53, 67);
+            color: rgb(134, 167, 167);
+            font-weight: 800;
+        }
+        .container{
+            padding: 4px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        {{>navbar}}
+        <div class="container">
+        <div class="formContainer" id="form1" class="formm">
+            <h1 style="color: green; font-size: 30px;">Employee Registration Form <button style="font-size: 20px;" id="formBTN1"><a href="/Login">login</a></button></h1>
+            
+            <form action="/register" method="post"> 
+                <div class="boxf">
+                    <input type="text" placeholder="First Name *" value="" name="firstname" />
+                    <input type="text" placeholder="Last Name *" value="" name="lastname" />
+                </div>
+                <div class="boxf" id="Emal">
+                    <input type="email" placeholder="Your Email *" value="" name="email" />
+                    <input type="radio" name="gender" class="AA"><span style="color: green; font-weight: bold; font-size:18px">Male</span>
+                    <input type="radio" name="gender" class="AA"><span style="color: green; font-weight: bold;font-size:18px">feale</span>
+                </div>
+                <div class="boxf">
+                    <input type="text" placeholder="Your Phone *"  value="" minlength="10" maxlength="10" name="phone" />
+                    <input type="text" placeholder="Enter your age *" value="" name="age" />
+                </div>
+                <div class="boxf">
+                    <input type="password" placeholder="Password *" value="" name="password" />
+                    <input type="password" placeholder="Conferm Password *" value="" name="confirmpassword" />
+                </div>
+                <div class="boxf">
+                    <input type="reset">
+                    <input type="submit" class="btnRegister" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+    {{>footer}}
+    </div>
+</body>
+</html>

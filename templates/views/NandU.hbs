@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health News and Updates</title>
+    <link rel="stylesheet" href="./css/NandU.css">
+</head>
+
+<body>
+    <div class="maincontainer">
+        {{>navbar}}
+        <header>
+            <h1><span id="element"></span></h1>
+        </header>
+        <div class="container" id="newsContainer">
+            <!-- News articles will be displayed here -->
+        </div>
+        {{>footer}}
+    </div>
+    <script src="./jsfile/NandU.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Health News and Updates'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

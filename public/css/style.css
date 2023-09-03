@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.maincontainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.head .container{
+    width: 100%;
+    height: 55vh;
+    background-color: #102150;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,-0.5),rgba(0,0,0,-0.5)),url("../img/bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.head .container .navbar{
+    display: flex;
+    padding: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head .container .navbar .logo{
+    width: 30px;
+    min-height: 50px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.head .container .navbar .logo img{
+    width: 60%;
+    object-fit: fill;
+    width: 40px;
+    /* line-height: 40px; */
+    margin-left: 20px;
+}
+.head .container .navbar .list{
+    margin-right: 50px;
+}
+.head .container .navbar .list ul
+{
+    display: flex;
+    list-style: none;
+}
+.head .container .navbar .list ul li{
+    margin-left: 20px;
+}
+
+.head .container .navbar .list ul li a{
+    text-decoration: none;
+    color: #fff;
+    color: white;
+    font-size: 19px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    /* text-transform: uppercase; */
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+.head .container .navbar .list ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    background: #fff;
+    left: 0;
+    bottom: -1px;
+    transition: all 0.3s linear;
+}
+.head .container .navbar .list ul li a:hover{
+    color: #6c779b;
+}
+.head .container .navbar .list ul li:hover > a::before{
+    width: 100%;
+    background : #cbd4f3;
+}
+
+.head .container .heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: wheat;
+}
+
+.head .container .heading h2,p{
+    text-align: center;
+}
+.head .container .heading .title{
+    width: 100%;
+}
+.head .container .heading .title h2
+{
+    font-size: 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-style: italic;
+}
+.head .container .heading .subtitle p{
+    color: white;
+    font-size: 18px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+.head .container .navbar .profileimg img{
+    object-fit: fill;
+    width: 40px;
+    margin-right: 50px;
+    border-radius: 32%;
+    cursor: pointer;
+}
+
+
+
+
+.readArticle{
+    display: block;
+    margin: auto;
+    font-size: 40px;
+    font-weight: bold;
+    color: #5a556b;
+}

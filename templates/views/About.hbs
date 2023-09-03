@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style5.css">
+</head>
+
+<body>
+    <div class="maincontainer">
+        {{>navbar}}
+
+
+
+        <div style="background-color: #ddd;">
+            <div class="section">
+                <div class="container">
+                    <div class="content-section">
+                        <div class="title">
+                            <h1>About US</h1>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li class="Ab1">
+                                    <div><span>Mission and Vision:</span>Clearly state your organization's mission and
+                                        vision. What is the ultimate goal of your healthcare services? How do you
+                                        envision
+                                        the impact you'll have on patients' lives?</div>
+                                </li>
+                                <li class="Ab1">
+                                    <div><span>History: </span>Provide a brief overview of how your healthcare
+                                        organization
+                                        came into existence. Highlight any significant milestones, achievements, or
+                                        growth
+                                        that demonstrate your dedication to healthcare.
+                                </li>
+                                <li class="Ab1">
+                                    <div><span>Expertise and Specialization: </span> Highlight the medical expertise and
+                                        specialization areas of your team. This could include doctors, specialists,
+                                        nurses,
+                                        therapists, and any other professionals that contribute to your healthcare
+                                        services.
+                                </li>
+                                <li class="Ab1">
+                                    <div><span>Patient-Centric Approach: </span> Emphasize your patient-centered
+                                        approach.
+                                        Discuss how you prioritize the well-being and comfort of your patients and their
+                                        families
+                                </li>
+                                <li class="Ab2">
+                                    <div><span>Quality Care: </span>Explain how you maintain high standards of
+                                        healthcare.
+                                        Mention any accreditations, certifications, or affiliations that reflect your
+                                        commitment to delivering quality care.</div>
+                                </li>
+                                <li class="Ab2">
+                                    <div><span>Cutting-Edge Technology: </span>If applicable, mention any advanced
+                                        medical
+                                        technology, equipment, or techniques that set your organization apart and
+                                        contribute
+                                        to better patient outcomes.</div>
+                                </li>
+                                <li class="Ab2">
+                                    <div><span>Holistic Healthcare: </span>If your approach involves a holistic or
+                                        multidisciplinary approach to healthcare, explain how you integrate various
+                                        aspects
+                                        of wellness into your services.</div>
+                                </li>
+                                <li class="Ab2">
+                                    <div><span>Community Engagement: </span>Describe your involvement with the local
+                                        community. This could include health awareness campaigns, workshops, seminars,
+                                        or
+                                        partnerships with other community organizations.</div>
+                                </li>
+                                <li class="Ab2">
+                                    <div><span>Patient Testimonials: </span>Include quotes or brief stories from
+                                        patients
+                                        who have benefited from your services. This adds a personal touch and helps
+                                        build
+                                        trust with potential patients.</div>
+                                </li>
+                                <li class="Ab2">
+                                    <div><span>Privacy and Ethics: </span>Highlight your commitment to patient privacy
+                                        and
+                                        ethical medical practices. This can reassure patients that their information and
+                                        well-being are in safe hands.</div>
+                                </li>
+                                <li class="Ab2">
+                                    <div><span>Team Introduction: </span>Introduce key members of your healthcare team,
+                                        including doctors, nurses, administrative staff, and support personnel. This can
+                                        make your organization feel more personable.</div>
+                                </li>
+                                <li>
+                                    <div><span>Research and Innovation: </span>If applicable, mention any research
+                                        initiatives or innovative projects your organization is involved in. This
+                                        showcases
+                                        your dedication to advancing medical knowledge.</div>
+                                </li>
+                                <li class="Ab2">
+                                    <div><span>Philanthropic Efforts: </span>If your organization is involved in
+                                        charitable
+                                        or philanthropic activities related to healthcare, share these initiatives and
+                                        their
+                                        impact.</div>
+                                </li>
+                                <li class="Ab2">
+                                    <div><span>Contact Information: </span>Make it easy for visitors to get in touch.
+                                        Provide contact details, including phone numbers, email addresses, and possibly
+                                        a
+                                        contact form.</div>
+                                </li>
+                                <li class="Ab2">
+                                    <div><span>Social Responsibility: </span>Discuss any sustainability practices or
+                                        environmentally friendly initiatives your organization follows.</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button id="abtbtn">Know more</button>
+
+                    </div>
+                    <div class="image-section">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8kTexQ7OGFlTbxhI4EJ6U4I_h_KicwALO2Q&usqp=CAU"
+                            alt="error">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        {{>footer}}
+    </div>
+    <script>
+        document.getElementById("abtbtn").addEventListener('click', () => {
+            let elements = document.getElementsByClassName("Ab2");
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.display = "block";
+            }
+        });
+
+    </script>
+</body>
+
+</html>

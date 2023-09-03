@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style3.css">
+</head>
+
+<body>
+    <div class="maincontainer">
+        {{>navbar}}
+        <div class="container">
+            <form action="/contact" method="post" class="ContactForm">
+                <h1 class="contactus-heading">Contact Us</h1>
+                <input name="name" type="text" class="feedback-input" placeholder="Name" required/>
+                <input name="email" type="email" class="feedback-input" placeholder="Email" required/>
+                <input name="phone" value="" minlength="10" maxlength="10" type="text" class="feedback-input" placeholder="Phone Number" required/>
+                <textarea name="textsms" class="feedback-input" placeholder="Enter Your Message" required></textarea>
+                <input type="submit" value=Send">
+            </form>
+        </div>
+        {{>footer}}
+    </div>
+</body>
+
+</html>

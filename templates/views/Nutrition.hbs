@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: rgb(40 59 73);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        header h1 span{
+            font-size: 35px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 60vw;
+            margin: 5px auto;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .ntrin {
+            background-color: #ddd;
+        }
+
+        .plan {
+            font-size: 15px;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        p{
+            font-size: 18px;
+        }
+
+        .plan:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #496787;
+        }
+
+        /* Modal Styles */
+        /* ... (modal styles similar to previous examples) ... */
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer">
+        {{>navbar}}
+
+
+
+        <div class="ntrin">
+            <header>
+                <h1><span id="element"></span></h1>
+            </header>
+            <div class="container">
+                <div class="plan" onclick="showDetails(1)">
+                    <h2>Weight Loss Plan</h2>
+                    <p>
+                        Weight loss plans are designed to help individuals lose excess body weight. They often involve
+                        creating
+                        a caloric deficit through a combination of reduced calorie intake and increased physical
+                        activity.
+                        These
+                        plans may also emphasize portion control and nutrient-dense foods....
+                    </p>
+                </div>
+                <div class="plan" onclick="showDetails(2)">
+                    <h2>Muscle Gain Plan</h2>
+                    <p>
+                        Muscle gain plans, also known as bulking plans, aim to increase muscle mass and strength. They
+                        usually
+                        involve a higher caloric intake, focusing on protein-rich foods and targeted strength training
+                        exercises....
+                    </p>
+                </div>
+                <div class="plan" onclick="showDetails(3)">
+                    <h2>General Health and Wellness Plan</h2>
+                    <p>
+                        This type of plan focuses on maintaining overall health and wellness. It typically includes a
+                        balanced
+                        diet with a variety of nutrients and regular physical activity, such as a mix of cardiovascular
+                        exercises, strength training, and flexibility exercises....
+                    </p>
+                </div>
+                <div class="plan" onclick="showDetails(4)">
+                    <h2>Athletic Performance Plan</h2>
+                    <p>
+                        Athletes require specialized plans tailored to their specific sport and performance goals. These
+                        plans
+                        focus on optimizing nutrition for energy, endurance, strength, and recovery, often including
+                        specific
+                        nutrient timing strategies....
+                    </p>
+                </div>
+                <div class="plan" onclick="showDetails(5)">
+                    <h2>High-Protein Plan</h2>
+                    <p>
+                        This plan emphasizes a higher intake of protein, which is essential for muscle repair and
+                        growth.
+                        It's
+                        commonly followed by those looking to build muscle or maintain muscle mass while losing
+                        weight....
+                    </p>
+                </div>
+                <div class="plan" onclick="showDetails(6)">
+                    <h2>Vegetarian or Vegan Plan</h2>
+                    <p>
+                        These plans exclude meat (vegetarian) or all animal products (vegan). Proper planning is
+                        important
+                        to
+                        ensure adequate intake of essential nutrients like protein, iron, calcium, and vitamin B12....
+                    </p>
+                </div>
+                <div class="plan" onclick="showDetails(7)">
+                    <h2>Functional Fitness Plan</h2>
+                    <p>
+                        This plan focuses on exercises that mimic everyday movements and improve overall functional
+                        strength
+                        and
+                        mobility. It's especially beneficial for enhancing quality of life and preventing injuries....
+                    </p>
+                </div>
+                <div class="plan" onclick="showDetails(8)">
+                    <h2>CrossFit Plan</h2>
+                    <p>
+                        CrossFit combines elements of high-intensity interval training (HIIT), weightlifting, and
+                        functional
+                        movements to promote overall fitness. Workouts are varied and intense....
+                    </p>
+                </div>
+                <div class="plan" onclick="showDetails(8)">
+                    <h2>Bodyweight Training Plan</h2>
+                    <p>
+                        This plan utilizes the resistance of one's own body weight to build strength, flexibility, and
+                        endurance. It's often convenient for those who prefer to work out at home or lack access to gym
+                        equipment....
+                    </p>
+                </div>
+                <div class="plan" onclick="showDetails(8)">
+                    <h2>Senior Fitness Plan</h2>
+                    <p>
+                        Designed for older adults, this plan focuses on maintaining mobility, balance, and overall
+                        health.
+                        It
+                        typically includes low-impact exercises and activities that cater to age-related
+                        considerations...
+                    </p>
+                </div>
+                <!-- Add more plans as needed -->
+            </div>
+            <div id="detailsModal">
+                <div class="modal-content">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalContent"></p>
+                </div>
+            </div>
+        </div>
+
+
+
+        {{>footer}}
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Nutrition and Fitness Plans'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

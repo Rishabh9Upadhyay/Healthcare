@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+    {{!--
+    <link rel="stylesheet" href="./css/dibba.css"> --}}
+    <link rel="stylesheet" href="./css/style4.css">
+    <link rel="stylesheet" href="./css/style8.css">
+
+</head>
+
+<body>
+    <div class="Preloader" id="preloader">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <span class="loading">Loading...</span>
+    </div>
+    <div class="maincontainer" id="main1" style="display: none;">
+        <header class="head">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="./img/pngg.png" alt="">
+                        </a>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/article">Articls</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="/about">About</a></li>
+                            {{!-- <li id="sign"><a href="/login">Sign in</a></li> --}}
+                            {{!-- <li id="signup"><a href="/register">Sign Up</a></li> --}}
+                            {{!-- <li><a href="#" id="user_name">{{Name}}</a></li> --}}
+
+
+
+                            {{#if Name}}
+                            {{!-- <li><a href="/logout">Logout</a></li> --}}
+                            {{else}}
+                            <li id="sign"><a href="/login">Sign in</a></li>
+                            <li id="signup"><a href="/register">Sign Up</a></li>
+                            {{/if}}
+                            <li><a href="#" id="user_name">{{Name}}</a></li>
+
+                        </ul>
+                    </div>
+                    {{!-- <div class="profileimg">
+                        <img src="https://scontent.fccu31-1.fna.fbcdn.net/v/t39.30808-6/274171064_128851556319201_349070966229204610_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ywvcd2x86xwAX__eDDE&_nc_ht=scontent.fccu31-1.fna&oh=00_AfDwX2elgs4OZY_Z8fkNVX_PR6HvGUjOBlBZeO1NnLCFyA&oe=64E48EB1"
+                            alt="">
+                    </div> --}}
+                </nav>
+                <div class="heading">
+                    <div class="title">
+                        <h2>HealthPulse Connect</h2>
+                    </div>
+                    <div class="subtitle">
+                        <p>Empowering Health, Enriching Lives: Your Wellness Journey Starts Here.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container5">
+            <a href="/article">
+                <div class="boxes" id="b1">
+                    <span id="element"></span>
+                </div>
+            </a>
+            <a href="/Exercise">
+                <div class="boxes" id="b2">
+                    <span id="element2"></span>
+                </div>
+            </a>
+            <a href="/expert">
+                <div class="boxes" id="b3">
+                    <span id="element3"></span>
+                </div>
+            </a>
+            <a href="/NewsAndUpdate">
+                <div class="boxes" id="b4">
+                    <span id="element4"></span>
+                </div>
+            </a>
+        </div>
+
+        {{>footer}}
+    </div>
+    {{!--
+    <script src="./jsfile/script.js"></script> --}}
+    <script src="./jsfile/script1.js"></script>
+    <script src="./jsfile/cookie.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn', 'Here! you can learn about heath articles', 'click on the box to learn'],
+            typeSpeed: 50,
+        });
+        var typed = new Typed('#element2', {
+            strings: ['Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more', 'Here! know about some heath Exercise', 'click on the box to know more',],
+            typeSpeed: 50,
+        });
+        var typed = new Typed('#element3', {
+            strings: ['Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more', 'Here!know about expert insights for diseases', 'Click on the box to know more'],
+            typeSpeed: 50,
+        });
+        var typed = new Typed('#element4', {
+            strings: ['Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box', 'Here! find all heath news and update', 'click on the box'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        setTimeout(() => {
+            document.getElementById("preloader").style.display = "none";
+            document.getElementById("main1").style.display = "flex";
+        }, 2000)
+    </script>
+</body>
+
+</html>

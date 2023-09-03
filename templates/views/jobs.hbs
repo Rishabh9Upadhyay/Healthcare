@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/job2.css">
+</head>
+
+<body>
+    <div class="maincontainer">
+        {{>navbar}}
+
+        <header>
+            <h1><span id="element"></span></h1>
+        </header>
+        <div class="container">
+            <form action="/jobs" method="post">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" required name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required name="email">
+
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" required minlength="10" maxlength="10" name="Phone">
+
+                <label for="coverLetter">Cover Letter:</label>
+                <textarea id="coverLetter" rows="6" required name="Cover"></textarea>
+
+                <label for="education">Highest Education:</label>
+                <input type="text" id="education" required name="education">
+
+                <label for="experience">Relevant Experience:</label>
+                <textarea id="experience" rows="6" required name="exper"></textarea>
+
+                <label for="references">Professional References:</label>
+                <textarea id="references" rows="4" required name="ref"></textarea>
+
+                <label for="portfolio">Portfolio/Work Samples:</label>
+                <input type="text" id="portfolio" name="portfolio">
+
+                <label for="salary">Salary Expectations:</label>
+                <input type="text" id="salary" name="salary">
+
+                <input type="submit" name="submit" value="Submit Application" id="submitbtn">
+
+                {{!-- <button type="submit" id="submitbtn">Submit Application</button> --}}
+            </form>
+            <p id="submissionStatus"></p>
+        </div>
+
+
+        {{>footer}}
+    </div>
+    <script src="./jsfile/job1.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['We are hiring', 'Job Application Form'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        document.getElementById("submitbtn").addEventListener("onclick",()=>{
+            alert("Allplication submitted");
+        })
+    </script>
+</body>
+
+</html>
